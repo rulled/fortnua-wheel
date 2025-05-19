@@ -1,0 +1,78 @@
+body {
+  background: linear-gradient(135deg, #10101A, #1D1D2E, #2A2A40); /* Darker Solo Leveling vibe */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0e0; /* Softer white for text */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+    background-color: rgba(20, 20, 30, 0.7); /* Slightly transparent dark card */
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 15px rgba(77, 150, 255, 0.2); /* Main shadow + subtle glow */
+}
+
+.solo-leveling-style {
+    color: #4D96FF; /* Solo Leveling blue accent */
+    font-weight: bold;
+}
+
+h1 .solo-leveling-style {
+    font-size: 0.8em; /* Make subtitle slightly smaller */
+}
+
+canvas#wheel {
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(77, 150, 255, 0.3), 0 0 10px rgba(255,255,255,0.1) inset; /* Glow effect */
+  /* border: 2px solid #4D96FF; */ /* Optional border */
+}
+
+.btn-success {
+  background-color: #28a745; /* Standard success green */
+  border-color: #1e7e34;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #196c2c;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.form-control {
+    background-color: #2a2a40;
+    border: 1px solid #4D96FF;
+    color: #fff;
+}
+.form-control::placeholder {
+    color: #888;
+}
+.form-control:focus {
+    background-color: #30304d;
+    border-color: #6aa9ff;
+    box-shadow: 0 0 0 0.25rem rgba(77, 150, 255, 0.3);
+    color: #fff;
+}
+
+
+#result {
+  min-height: 3em; /* Reserve space for result to prevent layout shift */
+  font-weight: 500;
+}
+
+#result .text-warning { /* Use Bootstrap's text-warning for rank emphasis */
+  color: #FFD700 !important; /* Gold for rank name */
+  font-weight: bold;
+  font-size: 1.2em;
+  display: block;
+  margin-top: 0.25em;
+}
